@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# print best school 10 times
+i=0
+while ((i < 10))
+do
+	((i++))
+	if ((i == 9))
+	then
+		printf '%s\n' 'Hi'
+	else
+		printf '%s\n' 'Best School'
+	fi
+	
+done

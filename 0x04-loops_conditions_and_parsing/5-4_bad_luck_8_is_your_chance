@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# print best school 10 times
+i=0
+while ((i < 10))
+do
+	((i++))
+	if ((i == 4))
+	then
+		printf '%s\n' 'bad luck'
+	elif ((i == 8))
+	then
+		printf '%s\n' 'good luck'
+	else
+		printf '%s\n' 'Best School'
+	fi
+	
+done
