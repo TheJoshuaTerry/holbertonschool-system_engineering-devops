@@ -6,6 +6,7 @@ do
 	((i++))
 	if ((i == 9))
 	then
+		printf '%s\n' 'Best School'
 		printf '%s\n' 'Hi'
 	else
 		printf '%s\n' 'Best School'

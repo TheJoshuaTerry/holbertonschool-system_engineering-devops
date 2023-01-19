@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# print best school 10 times
+i=0
+while ((i < 20))
+do
+	((i++))
+	if ((i == 4))
+	then
+		printf '%s\n' $i
+		printf '%s\n' 'bad luck from China'
+	elif ((i == 9))
+	then
+		printf '%s\n' $i
+		printf '%s\n' 'bad luck from Japan'
+	elif ((i == 17))
+	then
+		printf '%s\n' $i
+		printf '%s\n' 'bad luck from Italy'
+	else
+		printf '%s\n' $i
+	fi
+	
+done
