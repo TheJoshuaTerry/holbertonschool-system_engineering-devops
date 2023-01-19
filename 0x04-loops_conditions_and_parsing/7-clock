@@ -2,14 +2,17 @@
 # print best school 10 times
 min=0
 hour=0
-while ((hour < 12))
+while ((hour < 13))
 do
 	((min++))
 	if ((min == 60))
 	then
 		((hour++))
-		printf '%s\n' "Hour: $hour"
-		min=1
+		if ((hour < 13))
+		then
+			printf '%s\n' "Hour: $hour"
+			min=1
+		fi
 	else
 		printf '%s\n' $min
 	fi

@@ -4,20 +4,21 @@ i=0
 while ((i < 20))
 do
 	((i++))
-	if ((i == 4))
-	then
-		printf '%s\n' $i
-		printf '%s\n' 'bad luck from China'
-	elif ((i == 9))
-	then
-		printf '%s\n' $i
-		printf '%s\n' 'bad luck from Japan'
-	elif ((i == 17))
-	then
-		printf '%s\n' $i
-		printf '%s\n' 'bad luck from Italy'
-	else
-		printf '%s\n' $i
-	fi
-	
+	case $i in 
+		4)
+			printf '%s\n' $i
+			printf '%s\n' 'bad luck from China'
+		;;
+		9)
+			printf '%s\n' $i
+			printf '%s\n' 'bad luck from Japan'
+		;;
+		17)
+			printf '%s\n' $i
+			printf '%s\n' 'bad luck from Italy'
+		;;
+		*)
+			printf '%s\n' $i
+		;;
+	esac
 done
