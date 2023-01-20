@@ -2,4 +2,4 @@
 # We stopped our 4-to_infinity_and_beyond process using ctrl+c in the previous task, there is actually another way to do this.
 
 # Write a Bash script that stops 4-to_infinity_and_beyond process.
-pgrep -f 7-highlander | xargs kill -9
+pkill -KILL -f "7-highlander"
